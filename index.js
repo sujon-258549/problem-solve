@@ -106,7 +106,7 @@ const sortYear = (cars) => {
 // 5.Task: Array Reduction
 // Create an array of numbers. Write a function that uses the reduce method to calculate the sum of all even numbers in the array.
 
-const numbers = [12, 12, 6, 2, 3];
+const numbers = [12, 12, 6, 2, 3, 3, 12, 12, 14];
 
 const totalNumber = (number) => {
   const sum = number.reduce((acc, num) => {
@@ -115,4 +115,12 @@ const totalNumber = (number) => {
   return sum;
 };
 
-console.log(totalNumber(numbers));
+const duplicateValue = (array) => {
+  const set = new Set(array);
+  return Array.from(set);
+};
+
+// max Number
+
+const max = Math.max(...numbers);
+console.log(max);
